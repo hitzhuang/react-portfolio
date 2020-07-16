@@ -1,0 +1,20 @@
+footer {
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: linear-gradient(
+        60deg,
+        rgba(84, 58, 183, 1) 0%,
+        rgba(0, 172, 193, 1) 100%
+    );
+}
+
+footer a {
+    text-decoration: none;
+    /* color: rgba(0, 172, 193, 1); */
+    color: rgba(255, 255, 255, 0.8);
+}
