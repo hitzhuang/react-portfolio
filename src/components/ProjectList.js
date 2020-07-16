@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 // import Typography from "@material-ui/core/Typography";
 
 import Project from "./Project";
-import list from "../projects.desc";
+import list from "../data/Project.data";
 
 import "../styles/ProjectList.styles.css";
 

@@ -4,6 +4,8 @@ const useStyles = makeStyles((theme) => ({
     root: {
         borderRadius: "30px",
         fontSize: "14pt",
+        boxShadow: "0px 0px 5px lightgrey",
+        backgroundColor: "rgb(248,248,248)",
     },
     content: {
         padding: "25px",

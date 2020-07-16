@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../logo.svg";
+import logo from "../images/logo.svg";
 import WavesContainer from "./BackgrounWaves";
 
 import Container from "@material-ui/core/Container";

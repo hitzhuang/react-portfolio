@@ -1,3 +1,5 @@
+import hangman from "../images/hangman/hangman.png";
+import lights_out from "../images/lights_out.png";
 export default [
     {
         id: 1,
@@ -10,7 +12,7 @@ export default [
              This is a basic practice of coding using React.`,
         credits:
             "The Modern React Bootcamp (Hooks, Context, NextJS, Router) from Colt Steele @Udemy",
-        screen: "/lights_out.png",
+        screen: hangman,
         link: "",
     },
     {
@@ -24,7 +26,7 @@ export default [
             the algorithm behind the scene. This is another example of basic practice of coding using React.`,
         credits:
             "The Modern React Bootcamp (Hooks, Context, NextJS, Router) from Colt Steele @Udemy",
-        screen: "/lights_out.png",
+        screen: lights_out,
         link: "",
     },
     {
@@ -40,7 +42,7 @@ export default [
             to make an axios restful api call and then to render the content.`,
         credits:
             "The Modern React Bootcamp (Hooks, Context, NextJS, Router) from Colt Steele @Udemy",
-        screen: "/lights_out.png",
+        screen: lights_out,
         link: "",
     },
     {
@@ -52,7 +54,7 @@ export default [
         learns: `React Router is the final piece of the basic learning in React. It's the key to make an app navigation works.`,
         credits:
             "The Modern React Bootcamp (Hooks, Context, NextJS, Router) from Colt Steele @Udemy",
-        screen: "/lights_out.png",
+        screen: lights_out,
         link: "",
     },
 ];
