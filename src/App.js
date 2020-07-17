@@ -2,7 +2,8 @@ import React from "react";
 
 import Header from "./components/Header";
 import ProjectList from "./components/ProjectList";
-import HangmanApp from "./components/HangmanApp";
+// import HangmanApp from "./components/HangmanApp";
+import LightsOutApp from "./components/LightsOut/LightsOutApp";
 import Footer from "./components/Footer";
 import Page from "./components/Page";
 
@@ -14,7 +15,8 @@ function App() {
             <Header cakeresume={cakeresume} />
             <ProjectList />
             <Page>
-                <HangmanApp />
+                {/* <HangmanApp /> */}
+                <LightsOutApp />
             </Page>
             <Footer cakeresume={cakeresume} />
         </div>
