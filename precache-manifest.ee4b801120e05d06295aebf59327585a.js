@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7156c80e10d08060645f8284c886d5ef",
+    "revision": "24e134e9ab62e26d068c42834be99016",
     "url": "/react-portfolio/index.html"
   },
   {
-    "revision": "649c5b6eef66addc6a56",
-    "url": "/react-portfolio/static/css/main.e3cb2282.chunk.css"
+    "revision": "766d78ee25b9d49574f7",
+    "url": "/react-portfolio/static/css/main.62699d19.chunk.css"
   },
   {
-    "revision": "72c51d111042b44061d0",
-    "url": "/react-portfolio/static/js/2.a9dc1835.chunk.js"
+    "revision": "1b58889ce8772cac59cf",
+    "url": "/react-portfolio/static/js/2.17b12678.chunk.js"
   },
   {
-    "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/react-portfolio/static/js/2.a9dc1835.chunk.js.LICENSE.txt"
+    "revision": "5dbf9415e481a23d65662fd7dec5f7a6",
+    "url": "/react-portfolio/static/js/2.17b12678.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "649c5b6eef66addc6a56",
-    "url": "/react-portfolio/static/js/main.6989cdd9.chunk.js"
+    "revision": "766d78ee25b9d49574f7",
+    "url": "/react-portfolio/static/js/main.419958fb.chunk.js"
   },
   {
     "revision": "aff33cef9dbb8787d6b3",
@@ -52,12 +52,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-portfolio/static/media/6.c80394c2.jpg"
   },
   {
+    "revision": "7b9eef77f9cd9e1b7032bc1b8fc173aa",
+    "url": "/react-portfolio/static/media/colorpalette.7b9eef77.png"
+  },
+  {
+    "revision": "9f78b7754ba6bad2032fbbb5ce471ad1",
+    "url": "/react-portfolio/static/media/dadjokes.9f78b775.png"
+  },
+  {
     "revision": "1e67ccc1c914e48b4fd23fcaa5bd1fb0",
     "url": "/react-portfolio/static/media/hangman.1e67ccc1.png"
   },
   {
-    "revision": "1615269c418e3184658d7409d0a4a9ba",
-    "url": "/react-portfolio/static/media/lights_out.1615269c.png"
+    "revision": "fe11b0f440dc4e36ba9b4c9c21dc3a52",
+    "url": "/react-portfolio/static/media/lights_out.fe11b0f4.png"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
