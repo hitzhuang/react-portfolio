@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
@@ -9,15 +10,13 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AirplayRoundedIcon from "@material-ui/icons/AirplayRounded";
 import useStyles from "../styles/Project.styles";
+import { setProjectDemoIndex } from "../redux/Project/actions";
 
 const Project = (props) => {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
-
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
-
+    const handleExpandClick = () => setExpanded(!expanded);
+    const handleDemoClick = () => props.setProjectDemoIndex(props.id);
     const { name, screen, desc, learns, credits } = props;
     return (
         <Card className={classes.root} variant="outlined">
@@ -38,7 +37,7 @@ const Project = (props) => {
                     <ExpandMoreIcon />
                     <Typography>More</Typography>
                 </IconButton>
-                <IconButton aria-label="take a look">
+                <IconButton aria-label="take a look" onClick={handleDemoClick}>
                     <AirplayRoundedIcon />
                     <Typography>&nbsp;DEMO</Typography>
                 </IconButton>
@@ -61,4 +60,4 @@ const Project = (props) => {
     );
 };
 
-export default Project;
+export default connect(null, { setProjectDemoIndex })(Project);

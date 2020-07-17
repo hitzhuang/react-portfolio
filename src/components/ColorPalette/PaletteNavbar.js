@@ -23,7 +23,7 @@ class PaletteNavbar extends Component {
         return (
             <div className={classes.root}>
                 <div className={classes.logo}>
-                    <Link to="/">Back to React Colors</Link>
+                    <Link to="/">Back to Color Palette</Link>
                 </div>
                 {changeLevel && (
                     <div className={classes.slider}>

@@ -13,7 +13,7 @@ const Main = ({ classes }) => {
         <Container className={classes.root} maxWidth={false}>
             <Container maxWidth="md">
                 <header>
-                    <div className={classes.logo}>React Colors</div>
+                    <div className={classes.logo}>Color Palette</div>
                 </header>
                 <PaletteList palettes={palettes} />
             </Container>

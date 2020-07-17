@@ -1,6 +1,8 @@
 import hangman from "../images/hangman/hangman.png";
 import lights_out from "../images/lights_out.png";
 import dadjokes from "../images/dadjokes.png";
+import colorpalette from "../images/colorpalette.png";
+
 export default [
     {
         id: 1,
@@ -52,7 +54,7 @@ export default [
         learns: `React Router is the final piece of the basic learning in React. It's the key to make an app navigation works.`,
         credits:
             "The Modern React Bootcamp (Hooks, Context, NextJS, Router) from Colt Steele @Udemy",
-        screen: lights_out,
+        screen: colorpalette,
         link: "",
     },
 ];
