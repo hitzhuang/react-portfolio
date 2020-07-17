@@ -11,7 +11,7 @@ import ColorPaletteApp from "./ColorPalette/ColorPaletteApp";
 import { setProjectDemoIndex } from "../redux/Project/actions";
 
 const ProjectDemo = (props) => {
-    const { classes, list, demoIndex, setProjectDemoIndex } = props;
+    const { classes, list, demoIndex, setProjectDemoIndex, fromRef } = props;
     const changeIndex = (e, page) => setProjectDemoIndex(page);
     const renderPage = (index) => {
         switch (index) {
@@ -28,7 +28,7 @@ const ProjectDemo = (props) => {
         }
     };
     return (
-        <div className={classes.root}>
+        <div className={classes.root} ref={fromRef}>
             {renderPage(demoIndex)}
             <Pagination
                 className={classes.menu}

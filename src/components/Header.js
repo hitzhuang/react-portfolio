@@ -8,8 +8,16 @@ import Button from "@material-ui/core/Button";
 
 import { withStyles } from "@material-ui/core/styles";
 import styles from "../styles/Header.styles";
+// import { animateScroll as scroll } from "react-scroll";
 
-const Main = ({ classes, cakeresume }) => {
+const Main = ({ classes, cakeresume, toRef }) => {
+    const handleClick = () =>
+        window.scrollTo({
+            left: 0,
+            top: toRef.current.offsetTop - 100,
+            behavior: "smooth",
+        });
+
     return (
         <div className={classes.root}>
             <Container maxWidth="sm">
@@ -37,7 +45,9 @@ const Main = ({ classes, cakeresume }) => {
                         </a>
                     </span>
                 </div>
-                <Button className={classes.exploreBtn}>Explore</Button>
+                <Button className={classes.exploreBtn} onClick={handleClick}>
+                    Explore
+                </Button>
             </Container>
             <WavesContainer />
         </div>

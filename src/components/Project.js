@@ -16,7 +16,14 @@ const Project = (props) => {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
     const handleExpandClick = () => setExpanded(!expanded);
-    const handleDemoClick = () => props.setProjectDemoIndex(props.id);
+    const handleDemoClick = () => {
+        props.setProjectDemoIndex(props.id);
+        setTimeout(() => {
+            props.toRef.current.scrollIntoView({
+                behavior: "smooth",
+            });
+        }, 500);
+    };
     const { name, screen, desc, learns, credits } = props;
     return (
         <Card className={classes.root} variant="outlined">
