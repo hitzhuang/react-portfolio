@@ -7,7 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import Project from "./Project";
 import list from "../data/Project.data";
 
-import "../styles/ProjectList.styles.css";
+import "../styles/ProjectList.css";
 
 const ProjectList = () => (
     <Container className="ProjectList" maxWidth="md">

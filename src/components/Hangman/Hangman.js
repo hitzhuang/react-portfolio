@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import "../styles/Hangman.css";
-import img0 from "../images/hangman/0.jpg";
-import img1 from "../images/hangman/1.jpg";
-import img2 from "../images/hangman/2.jpg";
-import img3 from "../images/hangman/3.jpg";
-import img4 from "../images/hangman/4.jpg";
-import img5 from "../images/hangman/5.jpg";
-import img6 from "../images/hangman/6.jpg";
+import "../../styles/Hangman/Hangman.css";
+import img0 from "../../images/hangman/0.jpg";
+import img1 from "../../images/hangman/1.jpg";
+import img2 from "../../images/hangman/2.jpg";
+import img3 from "../../images/hangman/3.jpg";
+import img4 from "../../images/hangman/4.jpg";
+import img5 from "../../images/hangman/5.jpg";
+import img6 from "../../images/hangman/6.jpg";
 
 class Hangman extends Component {
     /** by default, allow 6 guesses and use provided gallows images. */

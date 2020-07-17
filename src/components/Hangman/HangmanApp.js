@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Hangman from "./Hangman";
-import { randomWord } from "../data/Hangman.data";
+import { randomWord } from "../../data/Hangman.data";
 
 import Container from "@material-ui/core/Container";
 
 import { withStyles } from "@material-ui/styles";
-import styles from "../styles/HangmanApp.styles";
+import styles from "../../styles/Hangman/HangmanApp.styles";
 
 const HangmanApp = ({ classes }) => {
     const [answer, setAnswer] = useState("apple");
