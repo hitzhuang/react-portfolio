@@ -1,0 +1,39 @@
+.JokeVote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14pt;
+}
+
+.JokeVote-votes {
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    margin: 0px 4px;
+    font-size: 8pt;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+    box-shadow: 0px 2px 5px lightgray;
+}
+
+.JokeVote .fa-thumbs-up {
+    color: rgba(12, 161, 12, 0.7);
+    cursor: pointer;
+}
+
+.JokeVote .fa-thumbs-up:hover {
+    color: green;
+    transform: rotateZ(-10deg);
+}
+
+.JokeVote .fa-thumbs-down {
+    color: rgb(239, 83, 83, 0.7);
+    cursor: pointer;
+}
+
+.JokeVote .fa-thumbs-down:hover {
+    color: rgba(232, 0, 0);
+    transform: rotateZ(10deg);
+}

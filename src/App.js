@@ -3,7 +3,8 @@ import React from "react";
 import Header from "./components/Header";
 import ProjectList from "./components/ProjectList";
 // import HangmanApp from "./components/HangmanApp";
-import LightsOutApp from "./components/LightsOut/LightsOutApp";
+// import LightsOutApp from "./components/LightsOut/LightsOutApp";
+import DadJokesApp from "./components/DadJokes/DadJokesApp";
 import Footer from "./components/Footer";
 import Page from "./components/Page";
 
@@ -16,7 +17,8 @@ function App() {
             <ProjectList />
             <Page>
                 {/* <HangmanApp /> */}
-                <LightsOutApp />
+                {/* <LightsOutApp /> */}
+                <DadJokesApp />
             </Page>
             <Footer cakeresume={cakeresume} />
         </div>

@@ -1,0 +1,13 @@
+.Joke {
+    display: flex;
+    flex-direction: row;
+    min-height: 65px;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+}
+
+.Joke-content {
+    text-align: left;
+    font-size: 11pt;
+    color: rgb(62, 62, 62);
+}
