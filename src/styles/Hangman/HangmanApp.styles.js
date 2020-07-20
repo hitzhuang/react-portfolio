@@ -5,10 +5,9 @@ const styles = {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        boxShadow: "0px 0px 10px rgba(0,0,0,0.5)",
         backgroundImage: noise,
         backgroundColor: "white",
-        marginBottom: "100px",
+        height: "90vh",
     },
 };
 

@@ -2,16 +2,19 @@
     color: black;
     text-align: center;
     padding: 50px 0px;
+    background-image: url("../../images/hangman/bg.jpg");
+    background-size: cover;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.27) !important;
 }
 
 .Hangman img {
     border: 10px solid white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.27),
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.27),
         0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
 
 .Hangman h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     margin-bottom: 0.3em;
     margin-top: 0;

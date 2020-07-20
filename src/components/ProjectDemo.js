@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { SwitchTransition, CSSTransition } from "react-transition-group";
 import Pagination from "@material-ui/lab/Pagination";
 import { withStyles } from "@material-ui/core/styles";
 import styles from "../styles/ProjectDemo.styles";
@@ -29,7 +30,15 @@ const ProjectDemo = (props) => {
     };
     return (
         <div className={classes.root} ref={fromRef}>
-            {renderPage(demoIndex)}
+            <SwitchTransition>
+                <CSSTransition
+                    key={"demots" + demoIndex}
+                    classNames="fade"
+                    timeout={500}
+                >
+                    {renderPage(demoIndex)}
+                </CSSTransition>
+            </SwitchTransition>
             <Pagination
                 className={classes.menu}
                 count={list.length}

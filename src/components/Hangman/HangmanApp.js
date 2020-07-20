@@ -11,7 +11,7 @@ const HangmanApp = ({ classes }) => {
     const [answer, setAnswer] = useState("apple");
     const restart = () => setAnswer(randomWord());
     return (
-        <Container className={classes.root} maxWidth="sm">
+        <Container className={classes.root} maxWidth={false}>
             <Hangman
                 answer={answer}
                 maxWrong={answer.length}

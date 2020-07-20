@@ -8,6 +8,8 @@ import img4 from "../../images/hangman/4.jpg";
 import img5 from "../../images/hangman/5.jpg";
 import img6 from "../../images/hangman/6.jpg";
 
+import { Container, Card } from "@material-ui/core";
+
 class Hangman extends Component {
     /** by default, allow 6 guesses and use provided gallows images. */
     static defaultProps = {
@@ -82,51 +84,57 @@ class Hangman extends Component {
         const { nWrong } = this.state;
         const { maxWrong } = this.props;
         return (
-            <div className="Hangman">
-                <h1>Hangman</h1>
-                {/* image */}
-                {nWrong <= maxWrong ? (
-                    <img
-                        src={this.props.images[nWrong]}
-                        alt={`${nWrong}/${maxWrong} wrong guesses`}
-                    />
-                ) : null}
+            <Container maxWidth="sm">
+                <Card className="Hangman">
+                    <h1>Hangman</h1>
+                    {/* image */}
+                    {nWrong <= maxWrong ? (
+                        <img
+                            src={this.props.images[nWrong]}
+                            alt={`${nWrong}/${maxWrong} wrong guesses`}
+                        />
+                    ) : null}
 
-                {/* guessing status */}
-                {nWrong > 0 && (
-                    <div style={{ color: "red" }}>wrong guesses: {nWrong}</div>
-                )}
+                    {/* guessing status */}
+                    {nWrong > 0 && (
+                        <div style={{ color: "red" }}>
+                            wrong guesses: {nWrong}
+                        </div>
+                    )}
 
-                {/* answer */}
-                <p className="Hangman-word">
-                    {!this.isGameOver()
-                        ? this.guessedWord()
-                        : this.props.answer}
-                </p>
+                    {/* answer */}
+                    <p className="Hangman-word">
+                        {!this.isGameOver()
+                            ? this.guessedWord()
+                            : this.props.answer}
+                    </p>
 
-                {/* buttons */}
-                {!this.isGameOver() && !this.isWin() && (
-                    <p className="Hangman-btns">{this.generateButtons()}</p>
-                )}
+                    {/* buttons */}
+                    {!this.isGameOver() && !this.isWin() && (
+                        <p className="Hangman-btns">{this.generateButtons()}</p>
+                    )}
 
-                {/* You Lose */}
-                {this.isGameOver() && (
-                    <h1 style={{ color: "red" }}>You Lose!!!</h1>
-                )}
+                    {/* You Lose */}
+                    {this.isGameOver() && (
+                        <h1 style={{ color: "red" }}>You Lose!!!</h1>
+                    )}
 
-                {/* You Win */}
-                {this.isWin() && <h1 style={{ color: "green" }}>You Win!!!</h1>}
+                    {/* You Win */}
+                    {this.isWin() && (
+                        <h1 style={{ color: "green" }}>You Win!!!</h1>
+                    )}
 
-                {/* restart button */}
-                <div>
-                    <button
-                        style={{ width: "260px" }}
-                        onClick={this.handleRestart}
-                    >
-                        restart?
-                    </button>
-                </div>
-            </div>
+                    {/* restart button */}
+                    <div>
+                        <button
+                            style={{ width: "260px" }}
+                            onClick={this.handleRestart}
+                        >
+                            restart?
+                        </button>
+                    </div>
+                </Card>
+            </Container>
         );
     }
 }
