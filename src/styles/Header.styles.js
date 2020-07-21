@@ -20,7 +20,7 @@ const styles = {
     logo: {
         minWidth: "40vmin",
         pointerEvents: "none",
-        margin: "40px auto 0px auto",
+        margin: "80px auto 0px auto",
         animation: "$logoSpin infinite 20s linear",
     },
     exploreBtn: {

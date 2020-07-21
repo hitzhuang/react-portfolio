@@ -7,7 +7,8 @@ const styles = {
         justifyContent: "center",
         backgroundImage: noise,
         backgroundColor: "white",
-        height: "90vh",
+        height: "100vh",
+        overflow: "hidden",
     },
 };
 
