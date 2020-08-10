@@ -25,17 +25,14 @@ const Main = ({ classes, cakeresume, toRef }) => {
                     <img src={logo} className={classes.logo} alt="logo" />
                     <h3>Welcome to Hitz's React portfolio.</h3>
                     <span>
-                        Hitz Huang is a full-stack web/app developer, also a
-                        UI/UX designer. He has transformed his professional
-                        level from JavaScript, jQuery into Reactjs.To demostrate
-                        Hitz' master frontend skills, this website is made using
-                        Reactjs with some experimental showcases learned online,
-                        such as Udemy.
-                    </span>
-                    <br /> <br />
-                    <span>
-                        If you have any question or would be insterested in
-                        hiring Hitz, please contact him at{" "}
+                        Hitz Huang is a web/app developer. To demostrate some
+                        front-end stills, this website is made using Reactjs
+                        with some experimental showcases learned online, such as
+                        Udemy.
+                        <br />
+                        <br />
+                        If you have any question or would be insterested, please
+                        contact him at{" "}
                         <a
                             href={cakeresume}
                             target="_blank"
